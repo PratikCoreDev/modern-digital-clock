@@ -53,24 +53,17 @@ It updates automatically every second without refreshing the page, providing a s
 
 ## 🖥️ Desktop
 
-
-```
-
-images/desktop.png
-
-```
+<p align="center">
+  <img src="images/desktop.png" alt="Desktop Preview" width="900">
+</p>
 
 ---
 
 ## 📱 Mobile
 
-
-```
-
-images/mobile.png
-
-```
-
+<p align="center">
+  <img src="images/mobile.png" alt="Mobile Preview" width="300">
+</p>
 ---
 
 # 🛠️ Tech Stack
@@ -103,11 +96,8 @@ Modern-Digital-Clock/
 
 # 🚀 Live Demo
 
-> Add your deployed website here
+# https://modern-clock.nexcrew.in
 
-```
-https://modern-clock.nexcrew.in
-```
 
 ---
 
