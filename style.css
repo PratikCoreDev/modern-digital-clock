@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    position: relative;
+
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: .15;
+    z-index: -1;
+}
+
+body::before {
+    width: 350px;
+    height: 350px;
+    background: #3b82f6;
+    top: -120px;
+    left: -120px;
+}
+
+body::after {
+    width: 300px;
+    height: 300px;
+    background: #06b6d4;
+    bottom: -100px;
+    right: -100px;
+}
+
+.container {
+
+    width: 560px;
+    max-width: 92%;
+    padding: 45px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .06);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+    transition: transform .3s ease;
+}
+
+.container:hover {
+    transform: translateY(-6px);
+}
+
+h2 {
+
+    color: #f8fafc;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.clock {
+    font-family: "Orbitron", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 4px;
+}
+
+.date {
+    margin-top: 22px;
+    color: #cbd5e1;
+    font-size: 22px;
+}
+
+.greeting {
+    margin-top: 14px;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+.status {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.live-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.9);
+        opacity: .6;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(.9);
+        opacity: .6;
+    }
+}
+
+.timezone {
+    margin-top: 18px;
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #38bdf8;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .clock {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
+
+    .date {
+        font-size: 18px;
+    }
+
+    .greeting {
+        font-size: 16px;
+    }
+
+    .timezone {
+        font-size: 14px;
+    }
+}
